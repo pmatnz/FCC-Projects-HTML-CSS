@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css_first_project.css">
+    <title>Paul's Survey Form </title>
+    </head>
+
+    <body>
+        <div>
+            <h1 id="title" name="title">Project Survey Form</h1>
+            <p id="description" name="description">Creating this survey form for my first FCC project using HTML and CSS</p>
+        </div>
+            
+        <div>
+            
+            <form id="survey-form" name="survey-form">
+
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+                
+                <label id="email-label">Email</label>
+                <input id="email" name="email" placeholder="Enter your email" type="email" required>
+                
+                <label id="number-label">ID Number </label>
+                <input id="number" name="number" placeholder="Enter your ID Number" required pattern="0-9" min="1" max="999" type="number">
+        
+                <select id="dropdown">
+                    <option>Select One</option>
+                    <option>I like surveys</option>
+                    <option>I don't mind surveys</option>
+                    <option>I hate Surveys</option>
+                </select>
+
+                <label for="yes">Yes</label>
+                <input id="yes" name="yes" type="radio" value="yes" required>
+                
+                <label for="no">No</label>
+                <input id="no" name="yes" type="radio" value="no" required>
+
+                <h2>What are your favourite coding languages?</h2>
+                
+                <label for="python">Python</label>
+                <input id="python" type="checkbox" name="languages" value="python" required>
+                
+                <label for="Ruby">Ruby</label>
+                <input id="Ruby" type="checkbox" name="languages" value="Ruby" required>
+                
+                <label for="C++">C++</label>
+                <input id="C++" type="checkbox" name="languages" value="C++" required>
+                
+                <label for="Javascript">Javascript</label>
+                <input id="Javascript" type="checkbox" name="languages" value="Javascript" required>
+                
+                <label for="Kotlin">Kotlin</label>
+                <input id="Kotlin" type="checkbox" name="languages" value="Kotlin" required>
+
+                <textarea id="comments" name="comments" placeholder="Add additional commments here"></textarea>
+
+                <input id="submit" type="submit">
+
+            </form>
+            
+        </div>
+
+    </body>
+
+
+
+</html>
