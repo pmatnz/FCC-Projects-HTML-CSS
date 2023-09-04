@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    /* * selector will apply to every single element , it is universal*/
+}
+
+.gallery img{
+    width:100%;
+    max-width:350px;
+    height:300px;
+    object-fit:cover;
+    /* object-fit will fix distorted images making them their original aspect ratio but also fit*/
+    border-radius: 10px;
+}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    /* text transform will change the font visuals eg make them all uppercase*/
+    padding: 32px;
+    background: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery::after {
+    display: flex;
+    flex-direction: row;
+    /*Flex direction dictates which way the container will push the elements, flex-wrap will wrap the images*/
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Justify content will centre contact based on the flex container*/
+    align-items: center;
+    padding:20px 10px;
+    max-width: 1400px;
+    margin:0 auto;
+    gap: 16px;
+    /* gap property will give flex containers all gaps inbetween*/
+}
+
+.gallery::after {
+    content: "";
+    width:350px;
+    
+}
+
+
