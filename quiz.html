@@ -15,18 +15,60 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a>INFO</a></li>
-                <li><a>HTML</a></li>
-                <li><a>CSS</a></li>
+                <li> <a href="#student-info">INFO </a> </li>
+                <li> <a href="#html-questions"> HTML</a> </li>
+                <li> <a href="#css-questions">CSS</a> </li>
+        
             </ul>
         </nav>
         <!--Nav element used to create headings that link to other pages-->
     </header>   
     <main>
-        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
-            <section role="region"></section>
-            <section role="region"></section>
-            <section role="region"></section>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info"> <h2 id="student-info">Student Info</h2> </section>
+                <div class="info"> 
+                    <label for="Name">Name</label> 
+                    <input id="Name" name="student-info" type="text">
+                </div>
+                <div class="info"> 
+                    <label for="Email Address">Email</label>  
+                    <input id="Email Address" type="email" name="student-info"> 
+                </div>
+                <div class="info"> 
+                    <label for="Date of Birth" >D.O.B<span class="sr-only">(Date of Birth)</span></label> 
+                    <input id="Date of Birth" type="date" name="student-info"> 
+                </div>
+            
+            <section role="region" aria-labelledby="html-questions"> <h2 id="html-questions">HTML Questions</h2> </section>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="question">
+                        <legend>Random question that is true of false?</legend>
+                        <ul class="answers-list">
+                            <li><label for="li1"> <input type="radio" id="li1" value="True" name="group-one"> True</label></li>
+                            <li><label for="li2"> <input type="radio" id="li2" value="False" name="group-one"> False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="question">
+                        <legend>Random question 2 that is true of false?</legend>
+                        <ul class="answers-list">
+                            <li><label for="li3"> <input type="radio" id="li3" value="True" name="group-two"> True</label></li>
+                            <li><label for="li4"> <input type="radio" id="li4" value="False" name="group-two"> False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            
+            <section role="region" aria-labelledby="css-questions"> <h2 id="css-questions">CSS Questions</h2> </section>
+            <!--for DOB box use "Date"-->
+            <div class="formrow"></div>
+                <div class="question-block"></div>
+                <div class="answer"></div>
+                <div class="question-block"></div>
+                <div class="answer"></div>
+          
             <input type="button" value="Submit">
         </form>
     </main>
