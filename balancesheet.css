@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    color:#0a0a23;
+}
+
+span[class~="sr-only"] { /*this will ensure these elemnts are hidden visually but still there for screen reader*/
+    border:0;
+    clip:rect(1px,1px,1px,1px);
+    clip-path: inset(50%);
+    width:1px;
+    height: 1px;
+    overflow: hidden; /*this will stop content overflowing*/
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    margin:-1px;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap:1rem;
+}
+
+h1 .flex span:first-of-type { /*This will target the very first element that matches*/
+    font-size:0.7em;
+}
+
+h1 .flex span:last-of-type{ /* This will target the last last span element*/
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin:0 auto; /* margin 0 auto looks to set everything in the middle*/
+    border:2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky; /* This will stick to the top, make you need to add where it is to stick to*/
+    top:0;
+    color:#fff;
+    background-color: #0a0a23;
+}
