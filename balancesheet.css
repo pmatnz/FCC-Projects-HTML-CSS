@@ -7,18 +7,18 @@ body {
     color:#0a0a23;
 }
 
-span[class~="sr-only"] { /*this will ensure these elemnts are hidden visually but still there for screen reader*/
-    border:0;
-    clip:rect(1px,1px,1px,1px);
-    clip-path: inset(50%);
-    width:1px;
-    height: 1px;
-    overflow: hidden; /*this will stop content overflowing*/
-    white-space: nowrap;
-    position: absolute;
-    padding: 0;
-    margin:-1px;
-}
+span[class~="sr-only"] { /* important keyword ensures you don't overwrite properties, this selector gets priority*/
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    width: 1px!important;
+    position: absolute!important;
+    overflow: hidden!important;
+    white-space: nowrap!important;
+    padding: 0!important;
+    margin: -1px!important;
+  }
 
 h1 {
     max-width: 37.25rem;
@@ -53,4 +53,105 @@ section {
     top:0;
     color:#fff;
     background-color: #0a0a23;
+    margin:0 -2px;
+    padding:0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    /* Calc function can calculate values from different properties*/
+    z-index: 999;
+}
+
+#years span[class] { /* This will target any span that has a class attached to it*/
+    font-weight: bold;
+    width:4.5rem;
+    text-align: right;
+}
+
+.table-wrap{
+    padding:0 0.75rem 1.5rem 0.75rem;
+}
+
+/*span{ :not(.sr-only){  Not element will target all spans that do not have sr-only class
+    font-weight: normal;*/
+
+
+table{
+    border-collapse: collapse;
+    border:0;
+    width:100%;
+    margin-top:3rem;
+    position: relative;
+}
+
+table  caption { /* only use > if you are trying to target a child element, dont need it if the element is direct*/
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left:0.5rem;
+}
+
+tbody td {
+    min-width:4rem;
+    max-width: 4rem;
+    width:100vw;
+}
+
+tbody th{
+    width:calc(100% - 12rem);
+}
+
+tr[class="total"]{ /* This will target all TR elements that have a class "Total:*/
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align:left;
+    padding:0.5rem 0 0.25rem 0.5rem
+}
+
+tr.total td { /* tr.total will select elements withn more than 1 class tr[total} will select elements with only 1 class*/
+    text-align: right;
+    padding:0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem;
+}
+
+tr.total:hover { /* this will change the color on a mouse hover*/
+    background-color: #99c9ff;
+}
+
+td.current{
+    font-style: italic;
+}
+
+tr.data{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th{
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data th .description{
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding:1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td{
+    padding:0.3rem 0.25rem 0;
+    text-align: right;
+    vertical-align: top;
+}
+
+tr.data td:last-of-type{
+    padding-right: 0.5rem;
+
 }
