@@ -1,0 +1,32 @@
+#JS_Documentation {
+    border:solid;
+    list-style-type: none;
+    width:300px;
+    height:500px;
+}
+
+#navbar header{
+    font-size: 31px;
+    font-weight: bold;
+    color:orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li a { /*Access all the list styling in here*/
+    color: #323135;
+    font-size: 25px;
+    padding:auto;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    cursor: pointer;
+    border:solid 1px;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
