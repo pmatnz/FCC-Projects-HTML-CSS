@@ -1,32 +1,52 @@
-#JS_Documentation {
-    border:solid;
-    list-style-type: none;
-    width:300px;
-    height:500px;
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
 }
 
-#navbar header{
-    font-size: 31px;
-    font-weight: bold;
-    color:orangered;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid 1px;
 }
 
-
-ul li a { /*Access all the list styling in here*/
-    color: #323135;
-    font-size: 25px;
-    padding:auto;
+#navbar ul {
+padding: 0px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+    
+#navbar ul a {
     text-decoration: none;
-    display: block;
-    padding: 20px 10px;
-    cursor: pointer;
-    border:solid 1px;
-    position: relative;
+    
 }
 
-li {
+#navbar header {
+    color:orangered;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top:20px;
+    
+}
+
+#navbar ul li {
+    color: black;
+    font-size: 25px;
+    padding:10px 0px 10px 20px;
+    border-top: solid 1px;
     list-style: none;
 }
+
+#js_doc {
+    border-bottom:solid 1px;
+    padding-bottom: 12px;
+    overflow-x: hidden;
+    width:300px;
+}
+
