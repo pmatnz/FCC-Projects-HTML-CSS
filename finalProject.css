@@ -1,0 +1,44 @@
+:root {
+    /*varibles in here*/
+}
+
+#welcome-section{
+    border:solid 1px;
+}
+
+#projects{
+    border:solid 1px;
+}
+
+#contact{
+    border:solid 1px;
+}
+
+.footer{
+    border:solid 1px;
+}
+
+
+header{
+    background:linear-gradient(rgb(15, 182, 146),rgb(30, 128, 209),rgb(204, 119, 119));
+    height:120px;
+    position: static;
+    text-align: right;
+    
+}
+
+.nav-bar-headings{
+    list-style-type: none;
+    display: inline;
+    
+}
+
+a{ /*this is styling all the text*/
+    text-decoration: none;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    list-style-type:none;
+    
+}
+
