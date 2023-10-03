@@ -129,22 +129,30 @@ a { /*this is styling all the text*/
     justify-content: center;
     align-items: center;
     background:linear-gradient(rgb(184, 77, 58),rgb(95, 136, 211));
+    position: relative;
 
+}
+
+.final-section {
+    position: relative;
+    
 }
 
 .email-address {
     font-size: 1.5rem;
     margin-left:10px;
-    background:linear-gradient(rgb(184, 77, 58),rgb(95, 136, 211));
     border:none;
-    
 }
 
 .submit {
-    margin-right: 20px;
-    font-style: inherit;
-    font-size: inherit;
+    display: inline;
+    padding-top: 3px;
+    font-size: 1.5rem;
 }
+.email-address,.submit {
+    height:40px;
+}
+
 
 .email-address::placeholder , .submit{
     color:var(--heading-color);
@@ -167,6 +175,37 @@ a { /*this is styling all the text*/
     font-weight: bold;
 }
 
+.icon-container {
+    position: absolute;
+    bottom:0;
+    padding-bottom: 40px;
+}
+
+.facebook{
+    color: #4267B2;
+}
+
+.instagram{
+    color: #d13650;
+}
+
+.linkedin {
+    color:#0072b1;
+}
+
+.call-me {
+    color:rgb(216, 135, 30);
+}
+
+.phone-number {
+    display: none;
+  }
+
+#call-me:hover .phone-number {
+    display: inline; 
+  }
+
+
 @media (max-width:1200px) {
     #welcome-section .welcome-heading {
         color: red;
@@ -177,3 +216,4 @@ a { /*this is styling all the text*/
     }
 
 }
+
