@@ -33,16 +33,17 @@ header {
 .nav-bar-headings {
     list-style-type: none;
     display: inline-block;
-    transition: transform 0.3 ease-in-out;
+    transition: transform 0.3s ease-in-out;
     padding:30px;
+}
+
+.nav-bar-headings a:hover {
+    color:orange !important;
 }
 
 .nav-bar-headings:hover {
     transform: scale(1.5);
 }
-
-
-
 
 /******NAV BAR STYLING******/
 
@@ -246,5 +247,5 @@ a { /*this is styling all the text*/
     #welcome-section h4 {
         color:rgb(255, 145, 0)
     }
-
 }
+
