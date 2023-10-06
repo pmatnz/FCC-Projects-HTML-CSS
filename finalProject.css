@@ -7,6 +7,9 @@
     padding:0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     width:100%;
     font-family:'Courier New', Courier, monospace;
@@ -26,10 +29,22 @@ header {
     z-index: 10;
 }
 
+/******NAV BAR STYLING******/
 .nav-bar-headings {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    transition: transform 0.3 ease-in-out;
+    padding:30px;
 }
+
+.nav-bar-headings:hover {
+    transform: scale(1.5);
+}
+
+
+
+
+/******NAV BAR STYLING******/
 
 a { /*this is styling all the text*/
     text-decoration: none;
@@ -175,14 +190,17 @@ a { /*this is styling all the text*/
     font-weight: bold;
 }
 
+/**********ICON STYLING************/ 
 .icon-container {
     position: absolute;
     bottom:0;
     padding-bottom: 30px;
+    
 }
 
 .facebook{
     color: #4267B2;
+    
 }
 
 .instagram{
@@ -202,8 +220,22 @@ a { /*this is styling all the text*/
   }
 
 #call-me:hover .phone-number {
-    display: inline; 
-  }
+    display: inline-block; 
+    }
+
+.fa-brands {
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.fa-solid:hover {
+    transform: scale(3);
+}
+
+.fa-brands:hover {
+    transform: scale(3);
+}
+/**********ICON STYLING************/    
 
 
 @media (max-width:1200px) {
@@ -216,4 +248,3 @@ a { /*this is styling all the text*/
     }
 
 }
-
