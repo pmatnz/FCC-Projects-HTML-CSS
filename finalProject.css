@@ -122,10 +122,6 @@ a {
 	object-fit: cover;
 }
 
-.picture-container {
-	padding: 0;
-}
-
 .child-container a {
 	color: var(--heading-color);
 	text-align: center;
@@ -231,6 +227,40 @@ a {
 	transform: scale(3);
 }
 /**********ICON STYLING************/
+
+/**********Testing*****************/
+.test-scrolling {
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.test-container {
+	width: 700px;
+	height: 700px;
+	border: solid 1px;
+	overflow-x: scroll;
+	transform: rotate(90deg);
+}
+
+.scroll-projects {
+	width: 700px;
+	height: 700px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.scroll-projects a img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.picture-container img {
+	transform: rotate(-90deg);
+	padding: 0;
+}
 
 @media (max-width: 1200px) {
 	#welcome-section .welcome-heading {
