@@ -242,24 +242,70 @@ a {
 	border: solid 1px;
 	overflow-x: scroll;
 	transform: rotate(90deg);
+	display: flex;
+	scroll-snap-type: x mandatory;
+	transform: rotate(360deg);
+	
 }
 
-.scroll-projects {
-	width: 700px;
-	height: 700px;
-	overflow-y: auto;
-	overflow-x: hidden;
+.scroll-projects1 {
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: center;
+	background-color: pink;
 }
 
-.scroll-projects a img {
+.scroll-projects1 img {
+	width: 600px;
+	padding-left: 25px;
+}
+
+.scroll-projects2 {
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: center;
+	background-color: lightblue;
+}
+
+.scroll-projects2 img {
+	width: 600px;
+	padding-left: 25px;
+}
+
+.scroll-projects3 {
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: center;
+	background-color: orange;
+}
+
+.scroll-projects3 img {
+	width: 600px;
+	padding-left: 25px;
+}
+
+.scroll-projects4 {
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: center;
+	background-color: lightgreen;
+}
+
+.scroll-projects4 img {
+	width: 600px;
+	padding-left: 25px;
+
+#calc-id {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
-}
-
-.picture-container img {
-	transform: rotate(-90deg);
-	padding: 0;
 }
 
 @media (max-width: 1200px) {
