@@ -191,4 +191,35 @@ const myDog = {
 const newVar = myDog.name;
 // Can also access these via bracket notiation
 const newVartwp = myDog[legs]
+// You can update an object using dot notation or brackets see below how to do that
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+// Below is bracket version
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog["bark]= "bow-wow";
+// Both of these will add a new property to an object
+//IMPORTANT use dot noation when there is a value already assigned and known, if you are using a function where the user is going to assign the value use BRACKET NOTATION
+//Testing if objects exists , use the following code, this uses the hasOwnProperty method to check if the object has a property attached
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty(checkProp) === true) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+  return obj.hasOwnProperty(checkProp)
+}
+//
 
