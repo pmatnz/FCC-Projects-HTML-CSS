@@ -129,3 +129,66 @@ function golfScore(par, strokes) {
 }
 golfScore(5, 4);
 
+//*************SWITCH STATEMENT*****************//
+// Switch statements compares your value aganist what the user has entered, if the user enters your value the code is then executed, if the user
+// does not enter your value the code will execute the option that does not equal any of the values you have selected, the values are treated with a === strict quality
+//Switch example below
+
+function caseInSwitch(val) {
+  let answer = '';
+  // Only change code below this line
+  switch (val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+        answer = 'beta';
+        break;
+    case 3:
+        answer = "gamma";
+        break;
+    case 4:
+        answer = "delta";
+        break;   
+
+    default:
+        answer = "default text"   
+        break;
+}
+  // Only change code above this line
+  return answer;
+}
+
+// You can use a default statement to fall back on it none of the cases are met, added to code above
+// Can have multiple cases under that all have the same answer if required
+
+//****COMPLEX BOOLEEN IF STATEMENTS *//
+// The below
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//Can be turned into this
+function isEqual(a, b) {
+  return a < b;
+}
+// The above will give a true or false answer which is not requiring a full if else statement
+
+//**************OBJECTS*******************//
+//Objects are simliar to have CSS is done in terms of syntax, you will add propertires and it will be simliar to key/value pairs eg see below
+const myDog = {
+  // Only change code below this line
+  "name": "Max",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Jasmin", "Paul"]
+};
+//Javascript will automatically typecase any non strings as strings this is something to remember
+//You can access object properties using dot notation, eg below
+const newVar = myDog.name;
+// Can also access these via bracket notiation
+const newVartwp = myDog[legs]
+
